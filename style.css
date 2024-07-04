@@ -11,5 +11,7 @@
 }
 
 .logo {
-    color: antiquewhite;
+    padding: 10px;
+    width: 70px;
+    height: auto;
 }
