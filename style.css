@@ -1,11 +1,15 @@
-body {
-    margin: 10px;
+.container {
+    margin: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 20px);
     box-sizing: border-box;
     overflow: hidden;
     background-color: whitesmoke;
     border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    color: antiquewhite;
 }
