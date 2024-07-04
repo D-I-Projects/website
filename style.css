@@ -6,8 +6,6 @@ body {
     height: calc(100vh - 20px);
     box-sizing: border-box;
     overflow: hidden;
-}
-
-.container {
-    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 15px;
 }
