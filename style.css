@@ -10,6 +10,11 @@ body {
     box-sizing: border-box;
 }
 
+.black {
+    color: black;
+    text-decoration: none;
+}
+
 .container {
     margin: 12px;
     padding: 20px;
@@ -23,7 +28,6 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%;
-    color: black;
 }
 
 .program_table {
