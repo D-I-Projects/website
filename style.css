@@ -1,24 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
 .container {
     margin: 12px;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     overflow: hidden;
     background-color: whitesmoke;
     border-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.logo {
-    padding: 10px;
-    width: 70px;
-    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
 
 .program_table {
-    padding:10px;
-    border: solid black;
-    border-radius: 10px;
-    color:black;
+    margin: 15px 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    table-layout: auto;
+}
+
+.program_table th, .program_table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.program_table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.program_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.program_table tr:hover {
+    background-color: #ddd;
+}
+
+.program_table th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.program_table th:last-child {
+    border-top-right-radius: 15px;
+}
+
+.program_table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.program_table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .program_table, .program_table th, .program_table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .program_table, .program_table th, .program_table td {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .program_table {
+        width: 100%;
+        overflow-x: auto; /* Ermöglicht horizontales Scrollen auf sehr kleinen Bildschirmen */
+    }
 }
