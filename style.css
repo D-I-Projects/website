@@ -126,7 +126,7 @@ footer a.black:hover {
     }
 }
 
-@media screen and (max-width: 373px) {
+@media screen and (max-width: 397px) {
     .program_table {
         font-size: 10px;
     }
