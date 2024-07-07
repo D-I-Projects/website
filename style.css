@@ -126,12 +126,113 @@ footer a.black:hover {
     }
 }
 
-@media screen and (max-width: 397px) {
+/* Adjustments for every 20px decrease below 600px */
+@media screen and (max-width: 580px) {
+    .program_table {
+        font-size: 11px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 5px 7px;
+    }
+}
+
+@media screen and (max-width: 560px) {
     .program_table {
         font-size: 10px;
     }
     .program_table th,
     .program_table td {
         padding: 4px 6px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .program_table {
+        font-size: 9px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 3px 5px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .program_table {
+        font-size: 8px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 2px 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .program_table {
+        font-size: 7px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 1px 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .program_table {
+        font-size: 6px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 1px 2px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .program_table {
+        font-size: 5px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 1px 2px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .program_table {
+        font-size: 4px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 1px 2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .program_table {
+        font-size: 3px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 1px 1px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .program_table {
+        font-size: 2px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 0.5px 1px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .program_table {
+        font-size: 1px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 0.5px 0.5px;
     }
 }
