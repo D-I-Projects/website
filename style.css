@@ -122,6 +122,16 @@ footer a.black:hover {
 
 @media screen and (max-width: 600px) {
     .program_table {
-        font-size: 12px; /* Beispiel für verkleinerte Schriftgröße */
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .program_table {
+        font-size: 10px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 4px 6px;
     }
 }
