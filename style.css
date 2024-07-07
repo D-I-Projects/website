@@ -155,3 +155,13 @@ footer a.black:hover {
         font-size: 0.75rem;
     }
 }
+
+
+@media screen and (max-width: 360px) {
+    .program_table {
+        font-size: 0.5px;
+    }
+    .program_table th,
+    .program_table td {
+        padding: 0.5px 0.5px;
+        font-size: 12px; /* 
