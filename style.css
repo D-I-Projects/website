@@ -33,8 +33,8 @@ body {
     width: 100%;
     color: black;
     border-radius: 15px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     table-layout: auto;
 }
 
@@ -119,7 +119,6 @@ footer a.black:hover {
     }
 }
 
-/* Adjustments for every 20px decrease below 600px */
 @media screen and (max-width: 580px) {
     .program_table {
         font-size: 11px;
@@ -230,7 +229,6 @@ footer a.black:hover {
     }
 }
 
-/* Minimum font size for very small screens */
 @media screen and (max-width: 360px) {
     .program_table {
         font-size: 0.5px;
