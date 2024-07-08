@@ -25,13 +25,17 @@ body {
     text-align: center;
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .program_table {
     margin: 1rem 0;
     border-collapse: collapse;
     width: 100%;
     color: black;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     table-layout: auto;
 }
 
