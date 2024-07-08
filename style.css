@@ -93,6 +93,8 @@ b {
 
 footer {
     margin-top: 1.25rem;
+    position: absolute;
+    bottom: 10px;
 }
 
 footer a.black {
