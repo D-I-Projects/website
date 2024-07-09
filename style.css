@@ -74,6 +74,18 @@ body {
     border-bottom-right-radius: 0.9375rem;
 }
 
+.center-content {
+    text-align: center;
+}
+.center-content p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+.center-content span {
+    font-size: 3em;
+    display: block;
+}
+
 header h1 {
     margin-bottom: 1.25rem;
     color: #333;
