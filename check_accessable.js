@@ -1,8 +1,7 @@
-var shouldRedirect = true;
+var shouldRedirect = false;
 
 window.onload = function() {
     if (!shouldRedirect) {
-        // Alle Inhalte der Seite verbergen
         document.body.innerHTML = '';
 
         // Neues <div>-Element erstellen und zur Seite hinzufügen
