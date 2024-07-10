@@ -1,4 +1,4 @@
-var shouldRedirect = true;
+var shouldRedirect = false;
 
 window.onload = function() {
     if (!shouldRedirect) {
@@ -46,9 +46,9 @@ window.onload = function() {
         centerContentDiv.className = 'center-content';
         centerContentDiv.innerHTML = `
             <span>&#9888;</span>
-            <p>Diese Website ist derzeit nicht zugänglich.</p>
-            <p>Bitte versuchen Sie es später erneut. Wir entschuldigen uns für die Unannehmlichkeiten.</p>
-            <p class="note">Bei weiteren Fragen wenden Sie sich bitte an unseren Support.</p>
+            <p>The website you are trying to access is currently unavailable.</p>
+            <p>Please try again later. We apologize for any inconvenience caused.</p>
+            <p class="note">For further assistance, please contact our support.</p>
         `;
         
         document.body.appendChild(centerContentDiv);
