@@ -46,7 +46,6 @@ window.onload = function() {
         centerContentDiv.className = 'center-content';
         centerContentDiv.innerHTML = `
             <span>&#9888;</span>
-            <div class="note" id="clock">00:00:00</div>
             <p>The website you are trying to access is currently unavailable.</p>
             <p>Please try again later. We apologize for any inconvenience caused.</p>
             <p class="note">For further assistance, please contact our support.</p>
