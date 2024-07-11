@@ -1,6 +1,19 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #444;
+    --header-color: #333;
+    --primary-color: #4CAF50;
+    --secondary-color: whitesmoke;
+    --border-color: black;
+    --hover-bg-color: #ddd;
+    --link-color: rgb(4, 85, 10);
+    --link-hover-color: #333;
+    --table-alt-row-color: #f2f2f2;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,6 +21,8 @@ body {
     align-items: center;
     height: 100vh;
     box-sizing: border-box;
+    color: var(--text-color);
+    position: relative;
 }
 
 .status, .impressum {
@@ -18,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: var(--secondary-color);
     border-radius: 0.9375rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     max-width: 90%;
@@ -41,21 +56,21 @@ body {
 
 .program_table th, .program_table td {
     padding: 0.75rem 0.9375rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
 }
 
 .program_table th {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: white;
 }
 
 .program_table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--table-alt-row-color);
 }
 
 .program_table tr:hover {
-    background-color: #ddd;
+    background-color: var(--hover-bg-color);
 }
 
 .program_table th:first-child {
@@ -88,50 +103,108 @@ body {
 
 header h1 {
     margin-bottom: 1.25rem;
-    color: #333;
+    color: var(--header-color);
     font-size: 2rem;
 }
 
 section p {
     margin: 0.625rem 0;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-color);
 }
 
 b {
     line-height: 1.6;
-    color: #444;
+    color: var(--text-color);
 }
 
 footer {
     margin-top: 1.25rem;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    border-top: 1px solid #e0e0e0;
-    width: 100%;
-    box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    z-index: 1000;
+    position: absolute;
+    bottom: 10px;
 }
 
 footer a.black {
-    color: rgb(4, 85, 10);
+    color: var(--link-color);
     text-decoration: none;
     margin: 0 0.625rem;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 footer a.black:hover {
-    color: #333;
-    transform: scale(1.1);
+    color: var(--link-hover-color);
 }
 
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --header-color: #f0f0f0;
+    --primary-color: #333;
+    --secondary-color: #2a2a2a;
+    --border-color: #555;
+    --hover-bg-color: #444;
+    --link-color: #ffffff;
+    --link-hover-color: #ddd;
+    --table-alt-row-color: #333;
+}
 
-/* Responsive adjustments */
+body.dark-mode .program_table {
+    color: white;
+}
+
+body.dark-mode .program_table th,
+body.dark-mode .program_table td {
+    border-color: var(--border-color);
+    color: white;
+}
+
+body.dark-mode .program_table tr:nth-child(even) {
+    background-color: var(--table-alt-row-color);
+}
+
+body.dark-mode .program_table tr:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.dark-mode-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode-btn i {
+    color: var(--header-color);
+    font-size: 1.2rem;
+}
+
+.dark-mode-btn:hover {
+    background: var(--hover-bg-color);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode-btn .fa-sun {
+    display: none;
+}
+
+body.dark-mode .dark-mode-btn .fa-moon {
+    display: none;
+}
+
+body.dark-mode .dark-mode-btn .fa-sun {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .program_table th,
     .program_table td {

@@ -6,7 +6,9 @@
     <title>D&I - Profit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icon_bg.png">
+    
     <script src="check_accessable.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <div class="center-content">
     <p id="message"></a>.</p>
@@ -14,6 +16,7 @@
 <body>
     <div class="impressum">
         <header><h1>D&I Projects</h1></header>
+        
         <section>
             <p>This website is solely for presenting information about various open-source projects, mostly licensed under the MIT License. No commercial services are offered, and no products are sold here.</p>
             <p>All my projects are clearly marked as not intended for profit or revenue generation.</p>
@@ -43,8 +46,25 @@
             </code>
     </div>
     <footer>
-        <a class="black" href="index.html">Status</a> 
+        <a class="black" href=" index.html">Status</a> 
         <a class="black" href="impressum.html">Impressum</a>
     </footer>
+    <button id="toggle-dark-mode" class="dark-mode-btn">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    <script>
+        const toggleDarkMode = () => {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        };
+
+        document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
+
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
 </body>
 </html>
