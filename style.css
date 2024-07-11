@@ -25,6 +25,55 @@ body {
     position: relative;
 }
 
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 0;
+    z-index: 9999;
+    display: none;
+}
+
+.cookie-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cookie-content p {
+    margin-bottom: 10px;
+}
+
+.button_accept {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button_leave {
+    background-color: hsl(0, 85%, 37%);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button_accept:hover {
+    background-color: #c9c9c9;
+}
+
+.button_leave:hover {
+    background-color: #751414;
+}
+
+
 .status, .impressum {
     margin: 1rem;
     padding: 1.25rem;
