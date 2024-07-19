@@ -21,3 +21,7 @@ function redirectToDiscordBot() {
 function redirectToChatBox() {
     location.href = 'https://d-i-projects.github.io/website/project/ChatBox';
 }
+
+function redirectToWebsite() {
+    location.href = 'https://d-i-projects.github.io/website/project/website';
+}
