@@ -104,9 +104,11 @@ body {
 }
 
 .return-div {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 .program_table th, .program_table td {
     padding: 0.75rem 0.9375rem;
