@@ -11,7 +11,7 @@ window.onload = function() {
             <div class="status-box">
                 <p><span>&#9888;</span> Diese Website ist momentan nicht erreichbar.</p>
                 <p>Grund: Die Website wird gerade aktualisiert.</p>
-                <p>Weitere Informationen finden Sie auf unserem <a class="black" href="https://discord.gg/A5reDWGkhV" target="_blank" rel="noopener noreferrer">Discord-Server</a>.</p>
+                <p>Weitere Informationen finden Sie auf unserem <a class="black" href="https://discord.gg/A5reDWGkhV" target="_blank" rel="noopener noreferrer">Discord-Server</a></p>
             </div>
         `;
 
