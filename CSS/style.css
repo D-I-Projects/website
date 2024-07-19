@@ -105,6 +105,9 @@ body {
 
 .return-div {
     position: absolute;
+    border : none;
+    background-color: #444;
+    border-radius: 10px;
     top: 14px;
     left: 14px;
 }
