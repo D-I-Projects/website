@@ -168,7 +168,7 @@ body {
     margin-bottom: 10px;
 }
 .status-box a {
-    color: #3498db;
+    color: var(--link-color);
     text-decoration: none;
 }
 .status-box a:hover {
