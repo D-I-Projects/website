@@ -112,7 +112,6 @@ body {
     padding: 5px;
     top: 11px;
     left: 11px;
-    color : var(--link-hover-color);
 }
 
 .program_table th, .program_table td {
@@ -185,7 +184,7 @@ footer {
     bottom: 10px;
 }
 
-footer a.black {
+.black {
     color: var(--link-color);
     text-decoration: none;
     margin: 0 0.625rem;
@@ -193,7 +192,7 @@ footer a.black {
     transition: color 0.3s ease;
 }
 
-footer a.black:hover {
+.black:hover {
     color: var(--link-hover-color);
 }
 
