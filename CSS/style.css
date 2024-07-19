@@ -151,14 +151,26 @@ body {
 
 .center-content {
     text-align: center;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.center-content p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
+.status-box p {
+    margin: 10px 0;
+    font-size: 16px;
 }
-.center-content span {
-    font-size: 3em;
-    display: block;
+.status-box span {
+    font-size: 24px;
+    color: #f39c12;
+}
+.status-box a {
+    color: #3498db;
+    text-decoration: none;
+}
+.status-box a:hover {
+    text-decoration: underline;
 }
 
 header h1 {
