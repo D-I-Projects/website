@@ -1,9 +1,8 @@
 # Website
 D&amp;I Website
 
-# License
-Look at the <a href="https://github.com/D-I-Projects/website/blob/main/ICON.md">ICON.md</a> file for more infos about the License of the Icon's.
+# Lizenz
+Weitere Informationen zur Lizenz der Icons finden Sie in der [ICON.md](https://github.com/D-I-Projects/website/blob/main/ICON.md) Datei.
 
 # Impressum
-Look at the <a href="https://github.com/D-I-Projects/website/blob/main/Impressum.md">IMPRESSUM.md</a> file for more infos about the Impressum of our Website.
-If there are any problems contact our given E-Mail. 
+Detaillierte Informationen zum Impressum unserer Website entnehmen Sie bitte der [IMPRESSUM.md](https://github.com/D-I-Projects/website/blob/main/Impressum.md) Datei. Bei Fragen oder Problemen kontaktieren Sie bitte die angegebene E-Mail-Adresse.
