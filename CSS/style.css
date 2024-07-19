@@ -106,7 +106,7 @@ body {
 .return-div {
     position: absolute;
     border : none;
-    background-color: #444;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 5px;
     top: 11px;
