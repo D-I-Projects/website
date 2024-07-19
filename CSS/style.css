@@ -162,8 +162,10 @@ body {
     font-size: 16px;
 }
 .status-box span {
+    display: block;
     font-size: 24px;
     color: #f39c12;
+    margin-bottom: 10px;
 }
 .status-box a {
     color: #3498db;
