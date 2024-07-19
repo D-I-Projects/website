@@ -9,7 +9,7 @@ window.onload = function() {
         
         // Concatenate the strings to display both messages
         centerContentDiv.innerHTML = '<span>&#9888;</span> This website is not accessible right now.<br>' +
-                                     'Reason : Updating the website';
+                                     '<p>Reason : Updating the website</p>';
         
         document.body.appendChild(centerContentDiv);
     }
