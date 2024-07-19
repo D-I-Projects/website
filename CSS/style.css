@@ -108,6 +108,7 @@ body {
     border : none;
     background-color: #444;
     border-radius: 10px;
+    padding: 5py;
     top: 11px;
     left: 11px;
 }
