@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&I</title>
     <link rel="stylesheet" href="https://d-i-projects.github.io/website/CSS/style.css">
+    <script>
+        function handleByeClick(event) {
+            event.preventDefault();
+            alert("Sorry, but we can't redirect you. Just close the tab!");
+        }
+    </script>
 </head>
 <body>
     <div class="return-div"> 
@@ -18,7 +24,7 @@
             <p>You have chosen to embark on a voyage beyond our website, into the vast expanse of the digital universe. Let your imagination soar among the stars and dream of endless possibilities.</p>
         </section>
         <footer>
-            <a class="black" href="about:home" target="_blank">Bye 👋</a> 
+            <a class="black" href="#" onclick="handleByeClick(event)">Bye 👋</a> 
         </footer>
     </main>
 </body>
