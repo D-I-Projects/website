@@ -119,7 +119,6 @@ body {
 }
 
 .program_table tr:hover {
-    cursor: pointer;
     background-color: var(--hover-bg-color);
 }
 
