@@ -19,7 +19,7 @@ function redirectToDiscordBot() {
 }
 
 function redirectToChatBox() {
-    location.href = 'https://d-i-projects.github.io/website/project/ChatBox';
+    location.href = 'https://d-i-projects.github.io/website/project/chatbox';
 }
 
 function redirectToWebsite() {

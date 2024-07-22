@@ -241,24 +241,6 @@ body.dark-mode .program_table tr:hover {
     background-color: var(--hover-bg-color);
 }
 
-.project-sidebar {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background-color: var(--bg-color);
-    border-left: 1px solid var(--primary-color);
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.project-sidebar button {
-    border-radius: 15px;
-    border: none;
-    padding: 4px;
-}
-
 .dark-mode-btn {
     position: absolute;
     top: 10px;
@@ -273,6 +255,35 @@ body.dark-mode .program_table tr:hover {
     justify-content: center;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 280px;
+    height: calc(100% - 60px);
+    background-color: var(--bg-color);
+    border-right: 1px solid var(--primary-color);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.project-sidebar button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project-content {
+    margin-left: 300px;
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .dark-mode-btn i {
