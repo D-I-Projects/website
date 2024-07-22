@@ -253,6 +253,12 @@ body.dark-mode .program_table tr:hover {
     box-sizing: border-box;
 }
 
+.project-sidebar button {
+    border-radius: 15px;
+    border: none;
+    padding: 4px;
+}
+
 .dark-mode-btn {
     position: absolute;
     top: 10px;
