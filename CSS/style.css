@@ -307,7 +307,7 @@ pre code {
 
 .project-sidebar {
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0;
     width: 280px;
     height: calc(100% - 60px);
