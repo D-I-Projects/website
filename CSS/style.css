@@ -244,7 +244,7 @@ pre code {
     right: 14px;
     background: var(--secondary-color);
     border: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -328,26 +328,9 @@ pre code {
     bottom: 10px;
 }
 
-.dark-mode-btn i {
-    color: var(--header-color);
-    font-size: 1.2rem;
-}
-
 .dark-mode-btn:hover {
     background: var(--hover-bg-color);
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
-}
-
-.dark-mode-btn .fa-sun {
-    display: none;
-}
-
-body.dark-mode .dark-mode-btn .fa-moon {
-    display: none;
-}
-
-body.dark-mode .dark-mode-btn .fa-sun {
-    display: block;
 }
 
 @media screen and (max-width: 955px) {
