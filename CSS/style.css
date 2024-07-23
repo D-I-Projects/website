@@ -200,7 +200,7 @@ pre code {
     top: 0;
     left: 0;
     width: 280px;
-    height: calc(100% - 60px);
+    height: calc(100% - 10px);
     background-color: var(--bg-color);
     border-right: 1px solid var(--primary-color);
     padding: 20px;
