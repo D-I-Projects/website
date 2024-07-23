@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>D&amp;I - Impressum</title>
+    <meta name="description" content="Status of D&amp;I Projects">
+    <meta name="keywords" content="D&amp;I, projects, status, contributors, licenses">
+    <meta name="author" content="D&I">
+    <script src="showsidebar.js"></script>
+    <link rel="stylesheet" href="https://d-i-projects.github.io/website/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="https://d-i-projects.github.io/website/IMG/icon_bg.png">
+    <script src="https://d-i-projects.github.io/website/JS/cookie.js"></script>
+    <script src="https://d-i-projects.github.io/website/JS/check_accessable.js"></script>
+    <script src="https://d-i-projects.github.io/website/JS/welcome_console_message.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:title" content="D&amp;I - Status">
+    <meta property="og:description" content="Repository informations of D&amp;I Projects">
+    <meta property="og:image" content="https://d-i-projects.github.io/website/IMG/banner.png">
+    <meta property="og:url" content="https://d-i-projects.github.io/website/">
+    <meta property="og:type" content="website">
+</head>
+<nav class="sidebar" aria-label="Sidebar">
+    <h1>D&I Projects</h1>
+
+    <a href="https://d-i-projects.github.io/website/home"><button aria-label="Home">Home</button></a>
+
+    <a href="https://d-i-projects.github.io/website/projects"><button aria-label="Projects">Projects</button></a>
+
+    <a href="https://d-i-projects.github.io/website/people"><button aria-label="People">People</button></a>
+
+    <div class="bottom-element">
+        <b><a class="impressum-link" href="https://d-i-projects.github.io/website/impressum/">Impressum</a></b> | <b><a class="impressum-link" href="https://d-i-projects.github.io/website/contact/">Contact</a></b>
+    </div> 
+</nav>
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>We collect data to remember your preferences for light and light mode, ensuring you have the best possible experience on our website.</p>
+        <button class="button_accept" id="accept-cookies">Accept</button>
+        <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
+    </div>
+</div>
+<main class="content">
+    <h1 id="info">Profit</h1>
+    <section>
+        <p>This website is solely for presenting information about various open-source projects, mostly licensed under the MIT License. No commercial services are offered, and no products are sold here.</p>
+        <p>All my projects are clearly marked as not intended for profit or revenue generation.</p>
+        <p>In each project folder, you can find a file named <code>PROFIT.md</code> which explains that I do not earn money from these projects, have no intention to do so, and in most cases, am unable to.</p>
+    </section>
+    <code>
+        # Profit Statement
+        <br>
+        <br>
+        This project is not created for the purpose of generating revenue or making money.
+        <br>
+        It is purely a non-profit initiative aimed at contributing to the community and advancing knowledge. 
+        <br>
+        <br>
+        **Key Points:**
+        <br>
+        - This project is open source and freely available for educational and non-commercial use.
+        <br>
+        - No funds are generated or sought through this project.
+        <br>
+        - Our primary goal is to foster learning, collaboration, and innovation without financial motivations.
+        <br>
+        <br>
+        We encourage contributions from the community to enhance the project's capabilities and reach.
+        <br>
+        We thank all people that use and like our Software!
+        </code>
+</main>
+<button id="toggle-light-mode" class="light-mode-btn" aria-label="light Mode">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+</button>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleLightMode = () => {
+            document.body.classList.toggle('light-mode');
+            const isLightMode = document.body.classList.contains('light-mode');
+            localStorage.setItem('lightMode', isLightMode);
+        };
+    
+        document.getElementById('toggle-light-mode').addEventListener('click', toggleLightMode);
+    
+        if (localStorage.getItem('lightMode') === 'true') {
+            document.body.classList.add('light-mode');
+        }
+    });    
+</script>
+</body> 
+</html>
