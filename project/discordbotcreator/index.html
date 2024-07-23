@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&I - diec</title>
+    <link rel="icon" type="image/x-icon" href="https://d-i-projects.github.io/website/IMG/icon_bg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://d-i-projects.github.io/website/JS/cookie.js" defer></script>
+    <link rel="stylesheet" href="https://d-i-projects.github.io/website/CSS/style.css">
+    <script src="https://d-i-projects.github.io/website/JS/check_accessable.js" defer></script>
+    <script src="https://d-i-projects.github.io/website/JS/welcome_console_message.js" defer></script>
+</head>
+<body>
+    <nav class="project-sidebar" aria-label="Sidebar">
+        <h1>Jump to...</h1>
+
+        <a href="#info"><button aria-label="Informationen">Info</button></a>
+
+        <a href="#example"><button aria-label="example">Example</button></a>
+
+        <a href="https://d-i-projects.github.io/website/status/"><button class="red" aria-label="Back">Back</button></a>
+    </nav>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We collect data to remember your preferences for dark and light mode, ensuring you have the best possible experience on our website.</p>
+            <button class="button_accept" id="accept-cookies">Accept</button>
+            <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
+        </div>
+    </div>
+    <main class="project-content">
+        <h1 id="info">DiscordBotCreator</h1>
+        <p></p>
+    </main>
+    <button id="toggle-dark-mode" class="dark-mode-btn" aria-label="Dark Mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleDarkMode = () => {
+                document.body.classList.toggle('dark-mode');
+                const isDarkMode = document.body.classList.contains('dark-mode');
+                localStorage.setItem('darkMode', isDarkMode);
+            };
+
+            document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
+
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body> 
+</html>
