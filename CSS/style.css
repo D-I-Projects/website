@@ -202,7 +202,7 @@ pre code {
     width: 280px;
     height: calc(100% - 10px);
     background-color: var(--bg-color);
-    border-right: 1px solid var(--primary-color);
+    border-right: 1px solid var(--secondary-color);
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
