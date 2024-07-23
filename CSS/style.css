@@ -75,22 +75,6 @@ body {
     background-color: #751414;
 }
 
-
-.status, .impressum, .main_box {
-    margin: 1rem;
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: var(--secondary-color);
-    border-radius: 0.9375rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    text-align: center;
-}
-
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -103,17 +87,6 @@ body {
     width: 100%;
     color: black;
     table-layout: auto;
-}
-
-.return-div {
-    position: absolute;
-    border : none;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    top: 11px;
-    left: 11px;
 }
 
 .program_table th, .program_table td {
@@ -151,28 +124,23 @@ body {
     border-bottom-right-radius: 0.9375rem;
 }
 
-.center-content {
-    text-align: center;
-    background: var(--primary-color);
-    border: none;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 .status-box p {
     margin: 10px 0;
     font-size: 16px;
 }
+
 .status-box span {
     display: block;
     font-size: 24px;
     color: #f39c12;
     margin-bottom: 10px;
 }
+
 .status-box a {
     color: var(--link-color);
     text-decoration: none;
 }
+
 .status-box a:hover {
     text-decoration: underline;
 }
@@ -305,7 +273,7 @@ pre code {
     background: #555;
 }
 
-.project-sidebar {
+.sidebar {
     position: fixed;
     top: 0px;
     left: 0;
@@ -322,7 +290,7 @@ pre code {
     background-color: #751414;
 }
 
-.project-sidebar button {
+.sidebar button {
     display: block;
     width: 230px;
     margin: 7px 0;
@@ -335,15 +303,15 @@ pre code {
     position: relative;
 }
 
-.project-sidebar a {
+.sidebar a {
     text-decoration: none;
 }
 
-.project-sidebar button:hover {
+.sidebar button:hover {
     background-color: var(--link-hover-color);
 }
 
-.project-content {
+.content {
     position: absolute;
     margin-left: 300px;
     top: 10px;
@@ -352,8 +320,12 @@ pre code {
     height: calc(100vh - 20px);
     overflow: auto; 
 }
-.project-content a {
+.content a {
     color : var(--link-color);
+}
+
+.impressum-link {
+    bottom: 10px;
 }
 
 .dark-mode-btn i {
@@ -376,6 +348,57 @@ body.dark-mode .dark-mode-btn .fa-moon {
 
 body.dark-mode .dark-mode-btn .fa-sun {
     display: block;
+}
+
+@media screen and (max-width: 955px) {
+    .sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .show-sidebar-btn {
+        display: block;
+    }
+
+    .close-sidebar-btn {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+.sidebar.active {
+    display: block;
+}
+
+.show-sidebar-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.close-sidebar-btn {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
