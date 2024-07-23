@@ -20,7 +20,7 @@
 
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-content">
-            <p>We collect data to remember your preferences for dark and light mode, ensuring you have the best possible experience on our website.</p>
+            <p>We collect data to remember your preferences for light and light mode, ensuring you have the best possible experience on our website.</p>
             <button class="button_accept" id="accept-cookies">Accept</button>
             <a href="https://d-i-projects.github.io/website/geschäftsmäßig"><button class="button_leave">Geschäftsmäßig</button></a>
         </div>
@@ -35,21 +35,21 @@
             <a class="black" href="https://d-i-projects.github.io/website/home">Status</a> 
             <a class="black" href="https://d-i-projects.github.io/website/impressum">Impressum</a>
         </footer>
-        <button id="toggle-dark-mode" class="dark-mode-btn">
+        <button id="toggle-light-mode" class="light-mode-btn">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
         </button>
         <script>
-            const toggleDarkMode = () => {
-                document.body.classList.toggle('dark-mode');
-                const isDarkMode = document.body.classList.contains('dark-mode');
-                localStorage.setItem('darkMode', isDarkMode);
+            const togglelightMode = () => {
+                document.body.classList.toggle('light-mode');
+                const islightMode = document.body.classList.contains('light-mode');
+                localStorage.setItem('lightMode', islightMode);
             };
             
-            document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
+            document.getElementById('toggle-light-mode').addEventListener('click', togglelightMode);
             
-            if (localStorage.getItem('darkMode') === 'true') {
-                document.body.classList.add('dark-mode');
+            if (localStorage.getItem('lightMode') === 'true') {
+                document.body.classList.add('light-mode');
             }
         </script>
 </body>
