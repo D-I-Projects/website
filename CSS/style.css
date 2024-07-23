@@ -9,6 +9,7 @@
     --link-color: rgb(4, 85, 10);
     --link-hover-color: #333;
     --table-alt-row-color: #f2f2f2;
+    --button-color: #1a1a1a; 
 }
 
 body {
@@ -221,6 +222,7 @@ body.dark-mode {
     --link-color: #ffffff;
     --link-hover-color: #ddd;
     --table-alt-row-color: #333;
+    --button-color: #f0f0f0; 
 }
 
 body.dark-mode .program_table {
@@ -273,24 +275,30 @@ body.dark-mode .program_table tr:hover {
 
 .project-sidebar button {
     display: block;
-    width: calc(100% - 20px);
-    margin: 10px 0;
-    background-color: var(--link-color);
-    border-radius: 15px;
+    width: 230px;
+    margin: 5px 0;
+    background-color: var(--button-color);
+    border-radius: 10px;
     border: none;
-    padding: 10px;
+    padding: 7px;
     box-sizing: border-box;
+    color: var(--bg-color);
+    position: relative;
 }
+
 
 .project-sidebar button:hover {
     background-color: var(--link-hover-color);
 }
 
 .project-content {
+    position: absolute;
     margin-left: 300px;
+    top: 10px;
     padding: 20px;
     flex-grow: 1;
-    align-items: top;
+    height: calc(100vh - 20px);
+    overflow: auto; 
 }
 
 .dark-mode-btn i {
