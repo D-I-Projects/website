@@ -1,4 +1,4 @@
-var shouldRedirect = true;
+var shouldRedirect = false;
 
 window.onload = function() {
     if (!shouldRedirect) {
