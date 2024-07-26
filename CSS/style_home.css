@@ -32,12 +32,13 @@ body {
 
 .cookie-banner {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 25px;
+    bottom: 25px;
+    width: 400px;
+    padding: 25px;
     background-color: rgb(1, 0, 0, 0.9);
+    border-radius: 15px;
     color: white;
-    padding: 20px 0;
     z-index: 9999;
     display: none;
 }
