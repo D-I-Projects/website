@@ -563,3 +563,32 @@ body.light-mode .light-mode-btn .fa-sun {
 .sidebar.active {
     display: block;
 }
+
+@media only screen and (max-width: 765px) {
+    .home-languages-box table {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .footer-left {
+        display:none;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .home-languages-box table {
+        width: 180px;
+    }
+    .home-languages-box table th {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .home-languages-box table {
+        width: 160px;
+    }
+    .home-languages-box table th {
+        font-size: 14px;
+    }
+}
