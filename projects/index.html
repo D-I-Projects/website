@@ -19,30 +19,63 @@
     <meta property="og:url" content="https://d-i-projects.github.io/website/">
     <meta property="og:type" content="website">
 </head>
-<div id="cookie-banner" class="cookie-banner">
-    <div class="cookie-content">
-        <p>We collect data to remember your preferences for light and dark mode, ensuring you have the best possible experience on our website.</p>
-        <button class="button_accept" id="accept-cookies">Accept</button>
-        <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We collect data to remember your preferences for light and dark mode, ensuring you have the best possible experience on our website.</p>
+            <button class="button_accept" id="accept-cookies">Accept</button>
+            <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
+        </div>
     </div>
-</div>
-<div class="topbar">
-    <div class="topbar-content">
-        <nav>
-            <img class="top-pic-dark" src="https://d-i-projects.github.io/website/IMG/light_transparent.png">
-            <img class="top-pic-light" src="https://d-i-projects.github.io/website/IMG/dark_transparent.png">
-            <a href="https://d-i-projects.github.io/website/home"><button>Home</button></a>
-            <a href="https://d-i-projects.github.io/website/projects"><button>Projects</button></a>
-            <a href="https://d-i-projects.github.io/website/people"><button>People</button></a>
-        </nav>
-    </div> 
-</div>
-<div class="page-content">
-    <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Suche...">
-        <div id="suggestions-box" class="suggestions-box"></div>
+    <div class="topbar">
+        <div class="topbar-content">
+            <nav>
+                <img class="top-pic-dark" src="https://d-i-projects.github.io/website/IMG/light_transparent.png">
+                <img class="top-pic-light" src="https://d-i-projects.github.io/website/IMG/dark_transparent.png">
+                <a href="https://d-i-projects.github.io/website/home"><button>Home</button></a>
+                <a href="https://d-i-projects.github.io/website/projects"><button>Projects</button></a>
+                <a href="https://d-i-projects.github.io/website/people"><button>People</button></a>
+            </nav>
+        </div> 
+    </div>
+    <div class="page-content">
+        <h1>Projects</h1>
+        <div class="search-container">
+            <input type="text" autocomplete="off" id="search-bar" placeholder="Suche...">
+            <div id="suggestions-box" class="suggestions-box"></div>
             <script src="script.js"></script>
-    </div>
+        </div>    
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Destor</h2>
+                        <p class="card-description">Destor is a Minecraft server manager. It helps you to configure your minecraft server.</p>
+                        <a class="card-button" href="https://d-i-projects.github.io/website/project/destor">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">DiscordBotCreator</h2>
+                        <p class="card-description">DiscordBotCreator is a basic GUI that helps you to setup and manage your Discord Bot!</p>
+                        <a class="card-button" href="https://d-i-projects.github.io/website/project/discordbotcreator">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">ChatBox</h2>
+                        <p class="card-description">A currently private repo for a Chat program that we will maybe make public.</p>
+                        <a class="card-button" href="https://d-i-projects.github.io/website/project/chatbox">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">diec</h2>
+                        <p class="card-description">Diec is a encoding process that we have created with using binaries in 8x Bit.</p>
+                        <a class="card-button" href="https://d-i-projects.github.io/website/project/diec">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -57,25 +90,24 @@
             </div>
         </div>
     </footer>
-</div>
-<button id="toggle-light-mode" class="light-mode-btn" aria-label="Light Mode">
-    <i class="fas fa-moon"></i>
-    <i class="fas fa-sun"></i>
-</button>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const toggleLightMode = () => {
-            document.body.classList.toggle('light-mode');
-            const isLightMode = document.body.classList.contains('light-mode');
-            localStorage.setItem('lightMode', isLightMode);
-        };
-    
-        document.getElementById('toggle-light-mode').addEventListener('click', toggleLightMode);
-    
-        if (localStorage.getItem('lightMode') === 'true') {
-            document.body.classList.add('light-mode');
-        }
-    });    
-</script>
+    <button id="toggle-light-mode" class="light-mode-btn" aria-label="Light Mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleLightMode = () => {
+                document.body.classList.toggle('light-mode');
+                const isLightMode = document.body.classList.contains('light-mode');
+                localStorage.setItem('lightMode', isLightMode);
+            };
+        
+            document.getElementById('toggle-light-mode').addEventListener('click', toggleLightMode);
+        
+            if (localStorage.getItem('lightMode') === 'true') {
+                document.body.classList.add('light-mode');
+            }
+        });    
+    </script>
 </body> 
 </html>

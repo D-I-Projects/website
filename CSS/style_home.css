@@ -15,11 +15,6 @@
     --box-color-text : rgb(0, 0, 0);
     --box-color : white;
     --button-color-reverse: #1a1a1a;
-    --table-background-color: #1a1a1a;
-    --table-header-background-color: #2a2a2a;
-    --table-header-text-color: #f0f0f0;
-    --table-row-even-background-color: #333;
-    --table-row-hover-background-color: #444;
 }
 
 body {
@@ -37,13 +32,12 @@ body {
 
 .cookie-banner {
     position: fixed;
-    left: 25px;
-    bottom: 25px;
-    width: 400px;
-    padding: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: rgb(1, 0, 0, 0.9);
-    border-radius: 15px;
     color: white;
+    padding: 20px 0;
     z-index: 9999;
     display: none;
 }
@@ -124,11 +118,6 @@ body.light-mode {
     --box-color-text : rgb(255, 255, 255);
     --box-color : #1a1a1a;
     --button-color-reverse : #f0f0f0; 
-    --table-background-color: #f0f0f0;
-    --table-header-background-color: #ddd;
-    --table-header-text-color: #333;
-    --table-row-even-background-color: #f2f2f2;
-    --table-row-hover-background-color: #ddd;
 }
 
 body.light-mode .program_table {
@@ -196,6 +185,141 @@ pre code {
     width:0px;
 }
 
+.page-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 75px;
+}
+
+.home-top-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 575px;
+    background-color: var(--box-color);
+    position: relative; 
+    top: 0; 
+    color: var(--box-color-text);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-top-box .cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+    animation: roll 4s infinite linear;
+    bottom: -70px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-top-box .cube .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--button-color);
+    opacity: 0.9;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cube .front  { transform: translateZ(50px); }
+.cube .back   { transform: rotateY(180deg) translateZ(50px); }
+.cube .left   { transform: rotateY(-90deg) translateZ(50px); }
+.cube .right  { transform: rotateY(90deg) translateZ(50px); }
+.cube .top    { transform: rotateX(90deg) translateZ(50px); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.home-top-box p {
+    color: #707070;
+}
+
+.home-top-box a {
+    text-decoration: none;
+}
+
+.home-top-box button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 25px;
+    background-color: var(--button-color-reverse);
+    color: var(--button-color);
+}
+
+.home-top-box button:hover {
+    background-color: var(--hover-bg-color);
+    cursor: pointer;
+}
+
+.home-top-box h1, .home-top-box p, .home-top-box button {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.home-info-page-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-info-page-box h1 {
+    font-size: 30px;
+}
+
+.home-info-page-box h1:hover {
+    color: #707070;
+}
+
+footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-left a, .footer-right a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    color: #ddd;
+}
+
 .topbar {
     position: fixed;
     top: 0;
@@ -242,15 +366,6 @@ pre code {
     gap: 10px;
 }
 
-footer {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 20px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
 .topbar button {
     top: 16px;
     background: var(--secondary-color);
@@ -277,38 +392,6 @@ footer {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.page-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 75px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-left, .footer-right {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-left a, .footer-right a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-left a:hover, .footer-right a:hover {
-    color: #ddd;
-}
-
 .sidebar {
     position: fixed;
     top: 70px;
@@ -326,44 +409,16 @@ footer {
 }
 
 .sidebar button {
-    top: 16px;
-    margin: 6px;
-    background: var(--secondary-color);
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
+    display: block;
     width: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1000;
-    color: var(--button-color);
-}
-
-.card {
-    width: 300px;
-    height: 275px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 1px solid #333;
-    border-radius: 20px;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s;
-    margin-top: 20px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    opacity: 0;
-    animation: fadeInSlideDown 1s ease forwards;
-}
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    margin: 4px 0;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    border: none;
+    padding: 11px;
+    box-sizing: border-box;
+    color: var(--bg-color);
+    position: relative;
 }
 
 .top-pic-dark {
@@ -382,8 +437,7 @@ footer {
 }
 
 .sidebar button:hover {
-    background: var(--hover-bg-color);
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+    background-color: var(--link-hover-color);
 }
 
 .content {
@@ -397,6 +451,10 @@ footer {
 }
 .content a {
     color : var(--link-color);
+}
+
+.impressum-link {
+    bottom: 10px;
 }
 
 .light-mode-btn i {
@@ -423,10 +481,4 @@ body.light-mode .light-mode-btn .fa-sun {
 
 .sidebar.active {
     display: block;
-}
-
-@media only screen and (max-width: 470px) {
-    .footer-left {
-        display:none;
-    }
 }
