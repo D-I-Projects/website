@@ -1,0 +1,7 @@
+JavaScript Tutorial|https://www.example.com/javascript-tutorial
+CSS Flexbox Guide|https://www.example.com/css-flexbox-guide
+HTML Basics|https://www.example.com/html-basics
+React Introduction|https://www.example.com/react-introduction
+Node.js Overview|https://www.example.com/nodejs-overview
+Vue.js Essentials|https://www.example.com/vuejs-essentials
+Python for Beginners|https://www.example.com/python-for-beginners

@@ -7,7 +7,7 @@
     <meta name="description" content="Stats of D&amp;I Projects">
     <meta name="keywords" content="D&amp;I, projects, status, contributors, licenses, development, open-source, collaboration, technology, innovation">
     <meta name="author" content="D&I">
-    <script src="showsidebar.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style_projects.css">
     <link rel="icon" type="image/x-icon" href="https://d-i-projects.github.io/website/IMG/icon_bg.png">
     <script src="https://d-i-projects.github.io/website/JS/cookie.js"></script>
@@ -27,15 +27,6 @@
         <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
     </div>
 </div>
-<div class="sidebar">
-    <button>diec</button>
-    <button>diec-test-gui</button>
-    <button>Destor</button>
-    <button>DiscordBotCreator</button>
-    <button>ChatBox</button>
-    <button>D&I Bot</button>
-    <button>DevplaceO</button>
-</div>
 <div class="topbar">
     <div class="topbar-content">
         <nav>
@@ -47,6 +38,11 @@
         </nav>
     </div> 
 </div>
+<div class="page-content">
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Suche...">
+        <div id="suggestions-box" class="suggestions-box"></div>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
