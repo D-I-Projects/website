@@ -95,18 +95,6 @@ b {
     color: var(--text-color);
 }
 
-.black {
-    color: var(--link-color);
-    text-decoration: none;
-    margin: 0 0.625rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.black:hover {
-    color: var(--link-hover-color);
-}
-
 body.light-mode {
     --bg-color: #f0f0f0;
     --text-color: #444;
@@ -310,105 +298,7 @@ footer {
     padding: 20px 0;
     position: absolute;
     width: 100%;
-    bottom: 0;
-}
-
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    width: 300px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 1px solid #333;
-    border-radius: 20px;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    animation: fadeInSlideDown 1s ease forwards;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-button {
-    margin: 6px;
-    background: var(--secondary-color);
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1000;
-    text-decoration: none;
-    color: var(--button-color);
-}
-
-.card-button:hover {
-    background: var(--hover-bg-color);
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
-}
-
-.card-title {
-    font-size: 1.5em;
-    margin: 10px 0;
-    color: #fff;
-    font-weight: bold;
-}
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@keyframes fadeInSlideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.card-description {
-    font-size: 1em;
-    margin: 0 0 20px;
-    color: #ddd;
+    bottom: -28px;
 }
 
 .footer-container {
