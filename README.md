@@ -1,3 +1,7 @@
+# Important
+
+Thats a old repository, I got rid of the /website/<page>
+
 # Website
 D&amp;I Website
 
