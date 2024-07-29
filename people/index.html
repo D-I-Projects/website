@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>D&amp;I - People</title>
+    <meta name="description" content="Stats of D&amp;I Projects">
+    <meta name="keywords" content="D&amp;I, projects, status, contributors, licenses, development, open-source, collaboration, technology, innovation">
+    <meta name="author" content="D&I">
+    <link rel="stylesheet" href="style_people.css">
+    <link rel="icon" type="image/x-icon" href="https://d-i-projects.github.io/website/IMG/icon_bg.png">
+    <script src="https://d-i-projects.github.io/website/JS/cookie.js"></script>
+    <script src="https://d-i-projects.github.io/website/JS/check_accessable.js" defer></script>
+    <script src="https://d-i-projects.github.io/website/JS/welcome_console_message.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:title" content="D&amp;I - Home">
+    <meta property="og:description" content="This is a page where all people in D&I Projects are listed!">
+    <meta property="og:image" content="https://d-i-projects.github.io/website/IMG/banner.png">
+    <meta property="og:url" content="https://d-i-projects.github.io/website/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We collect data to remember your preferences for light and dark mode, ensuring you have the best possible experience on our website.</p>
+            <button class="button_accept" id="accept-cookies">Accept</button>
+            <a href="https://d-i-projects.github.io/website/leave"><button class="button_leave">Leave</button></a>
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="topbar-content">
+            <nav>
+                <img class="top-pic-dark" src="https://d-i-projects.github.io/website/IMG/light_transparent.png">
+                <img class="top-pic-light" src="https://d-i-projects.github.io/website/IMG/dark_transparent.png">
+                <a href="https://d-i-projects.github.io/website/home"><button>Home</button></a>
+                <a href="https://d-i-projects.github.io/website/projects"><button>Projects</button></a>
+                <a href="https://d-i-projects.github.io/website/people"><button>People</button></a>
+            </nav>
+        </div> 
+    </div>
+    <div class="page-content">
+        <h1>People</h1>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="https://d-i-projects.github.io/website/home">Home</a>
+                <a href="https://d-i-projects.github.io/website/projects">Projects</a>
+                <a href="https://d-i-projects.github.io/website/people">People</a>
+            </div>
+            <div class="footer-right">
+                <a href="https://d-i-projects.github.io/website/impressum">Impressum</a>
+                <a href="https://d-i-projects.github.io/website/profit">Profit</a>
+                <a href="https://d-i-projects.github.io/website/geschäftsmäßig">Geschäftsmäßig</a>
+            </div>
+        </div>
+    </footer>
+    <button id="toggle-light-mode" class="light-mode-btn" aria-label="Light Mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleLightMode = () => {
+                document.body.classList.toggle('light-mode');
+                const isLightMode = document.body.classList.contains('light-mode');
+                localStorage.setItem('lightMode', isLightMode);
+            };
+        
+            document.getElementById('toggle-light-mode').addEventListener('click', toggleLightMode);
+        
+            if (localStorage.getItem('lightMode') === 'true') {
+                document.body.classList.add('light-mode');
+            }
+        });    
+    </script>
+</body> 
+</html>
